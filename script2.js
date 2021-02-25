@@ -1,6 +1,12 @@
-var nombre = prompt(" De quel nombre veux-tu calculer la factorielle ?");
+let nombre = prompt("tu veux la facto de quel nombre ?");
 
-while (nombre >= 0){
-	console.log(nombre);
-	nombre -= 1;
+function facto(nombre){
+	nombre2 = 1; 
+
+	for(let i = nombre; i > 1; i--){
+		nombre2 = nombre2 * i;
+	}
+	return nombre2
 }
+
+console.log(`la factorielle de ${nombre} est : ${facto(nombre)}`);
